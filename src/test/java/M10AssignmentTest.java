@@ -43,13 +43,15 @@ public class M10AssignmentTest {
         SharedDriver.closeDriver();
     }
 
-    @AfterEach
-    public void clearFields() {
-        FirstNameElement.clear();
-        lastNameElement.clear();
-        mobileNumOrEmail.clear();
-        newPassword.clear();
-    }
+//    @AfterEach
+//    public void clearFields() {
+//
+//        FirstNameElement.clear();
+//        lastNameElement.clear();
+//        mobileNumOrEmail.clear();
+//        newPassword.clear();
+//
+//    }
 
 
     @Test
