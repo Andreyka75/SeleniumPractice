@@ -43,13 +43,15 @@ public class M10AssignmentTest {
         SharedDriver.closeDriver();
     }
 
-    @AfterEach
-    public void clearFields() {
-        FirstNameElement.clear();
-        lastNameElement.clear();
-        mobileNumOrEmail.clear();
-        newPassword.clear();
-    }
+//    @AfterEach
+//    public void clearFields() {
+//
+//        FirstNameElement.clear();
+//        lastNameElement.clear();
+//        mobileNumOrEmail.clear();
+//        newPassword.clear();
+//
+//    }
 
 
     @Test
@@ -69,6 +71,8 @@ public class M10AssignmentTest {
 
         SIGN_UP = driver.findElement(By.xpath("//button[@type='submit']"));
         assertNotNull(SIGN_UP);
+
+
 
     }
 
@@ -172,13 +176,13 @@ public class M10AssignmentTest {
         assertNotNull(pronoun);
         pronoun.selectByVisibleText("She: \"Wish her a happy birthday!\"");
 
-        SIGN_UP = driver.findElement(By.xpath("//button[@type='submit']"));
+        SIGN_UP = driver.findElement(By.xpath("//*[@name='websubmit']"));
         SIGN_UP.click();
 
         Thread.sleep(10000);
 
     }
-    
+
 }
 
 
